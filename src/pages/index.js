@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
+import {BsFillMoonStarsFill} from 'react-icons/bs';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -14,8 +15,16 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
-        
+      <main className='px-10'>
+        <section className='min-h-screen'>
+          <nav className='py-10 mb-12 flex justify-between'>
+            <h1 className='text-xl'>developedByShehaan</h1>
+            <ul className='flex items-center'>
+              <li><BsFillMoonStarsFill className='text-2xl cursor-pointer'/></li>
+              <li><a href='#' className='bg-gradient-to-r from-cyan-500 to-teal-400 text-white py-2 rounded-md px-4 ml-8'>Resume</a></li>
+            </ul>
+          </nav>
+        </section>
       </main>
     </>
   )
