@@ -3,6 +3,11 @@ import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
 import {BsFillMoonStarsFill} from 'react-icons/bs';
+import {
+  AiFillTwitterCircle,
+  AiFillFacebook,
+  AiFillLinkedin
+} from 'react-icons/ai';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -24,6 +29,16 @@ export default function Home() {
               <li><a href='#' className='bg-gradient-to-r from-cyan-500 to-teal-400 text-white py-2 rounded-md px-4 ml-8'>Resume</a></li>
             </ul>
           </nav>
+          <div className='text-center p-10'>
+            <h1 className='text-5xl py-2 text-cyan-500'>Shehaan Avishka</h1>
+            <h3 className='text-2xl py-2'>Software Engineer and Designer</h3>
+            <p className='text-md py-5 leading-8 text-gray-800 '>Computer science undergraduate sophomore at the University of Colombo School of Computing. I am passionate about machine learning and have experience in web development and Python web automation.</p>
+          </div>
+          <div className='text-5xl flex justify-center gap-16'>
+            <AiFillLinkedin/>
+            <AiFillTwitterCircle/>
+            <AiFillFacebook/>
+          </div>
         </section>
       </main>
     </>
