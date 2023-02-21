@@ -9,6 +9,8 @@ import {
   AiFillLinkedin
 } from 'react-icons/ai';
 
+import deved from '../../public/dev-ed-wave.png';
+
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
@@ -38,6 +40,9 @@ export default function Home() {
             <AiFillLinkedin/>
             <AiFillTwitterCircle/>
             <AiFillFacebook/>
+          </div>
+          <div className='relative mx-auto h-80 w-80 bg-gradient-to-b from-cyan-500 rounded-full mt-20 overflow-hidden'>
+            <Image src={deved} fill style />
           </div>
         </section>
       </main>
