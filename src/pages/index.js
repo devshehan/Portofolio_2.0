@@ -13,6 +13,7 @@ import deved from '../../public/dev-ed-wave.png';
 import web1 from '../../public/projectO.png';
 import web2 from '../../public/projects.png';
 import web3 from '../../public/project2.png';
+import web4 from '../../public/project3.png';
 
 import { useState } from 'react';
 
@@ -78,6 +79,14 @@ export default function Home() {
 
                 <div className='basis-1/3 flex-1'>
                   <Image src={web2}
+                    className='rounded-lg object-cover'
+                    width={'100%'}
+                    height={'100%'}
+                    />
+                </div>
+                
+                <div className='basis-1/3 flex-1'>
+                  <Image src={web4}
                     className='rounded-lg object-cover'
                     width={'100%'}
                     height={'100%'}
