@@ -14,6 +14,8 @@ import web1 from '../../public/projectO.png';
 import web2 from '../../public/projects.png';
 import web3 from '../../public/project2.png';
 import web4 from '../../public/project3.png';
+import web5 from '../../public/project4.png';
+
 
 import { useState } from 'react';
 
@@ -76,6 +78,13 @@ export default function Home() {
                     height={'100%'}
                     />
                 </div>
+                <div className='basis-1/3 flex-1'>
+                  <Image src={web5}
+                    className='rounded-lg object-cover'
+                    width={'100%'}
+                    height={'100%'}
+                    />
+                </div>
 
                 <div className='basis-1/3 flex-1'>
                   <Image src={web2}
@@ -85,13 +94,6 @@ export default function Home() {
                     />
                 </div>
                 
-                <div className='basis-1/3 flex-1'>
-                  <Image src={web4}
-                    className='rounded-lg object-cover'
-                    width={'100%'}
-                    height={'100%'}
-                    />
-                </div>
               </div>
             </div>
           </section>
